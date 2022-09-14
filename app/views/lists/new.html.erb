@@ -1,0 +1,9 @@
+<h1>Create a list</h1>
+<%#= render "form", list: @list %>
+<%= @list = List.first %>
+
+<%= form_with model: @list do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
