@@ -1,9 +1,6 @@
-<h1>Create a list</h1>
-<%#= render "form", list: @list %>
-<%= @list = List.first %>
-
-<%= form_with model: @list do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <h1 class="mt-5">Create a list</h1>
+    <%= render "form", list: @list %>
+  </div>
+</div>
